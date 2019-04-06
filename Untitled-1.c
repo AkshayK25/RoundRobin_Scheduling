@@ -1,8 +1,5 @@
 #include<stdio.h>
-
 #include<stdlib.h>
-
-
 int main()
 
 {
@@ -124,6 +121,5 @@ for(i=1;i<=n1;i++)
 printf("\n The average Waiting Time=4.2f",awt);
 
 printf("\n The average Turn around Time=4.2f",atat);
-//getch();
 }         
 
