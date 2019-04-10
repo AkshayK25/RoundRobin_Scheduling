@@ -1,5 +1,8 @@
 #include<stdio.h>
+#include<curses.h>
 #include<stdlib.h>
+
+
 int main()
 
 {
@@ -10,24 +13,24 @@ int main()
 
 
 
- printf("\t\t ROUND ROBIN SCHEDULING"); 
-printf("Enter the number of Processors \n");
+printf("\t\t******************* ROUND ROBIN SCHEDULING**********************"); 
+printf("Enter the number of Processors: \n");
  
 scanf("%d",&n);
 
  n1=n;
  
-printf("\n Enter the Timeslice \n");
+printf("\n Enter the Timeslice: \n");
  
 scanf("%d",&ts);
  for(i=1;i<=n;i++)
 
  {
-   printf("\n Enter the process ID %d",i);
+   printf("\n Enter the process ID %d:",i);
    
 scanf("%d",&pid[i]);
    
-printf("\n Enter the Burst Time for the process");
+printf("\n Enter the Burst Time for the process:");
    
 scanf("%d",&bt[i]);
    need[i]=bt[i];
@@ -107,7 +110,7 @@ awt=(float)twt/n1;
 atat=(float)ttat/n1;
 
 
-printf("\n\n ROUND ROBIN SCHEDULING ALGORITHM \n\n");
+printf("\n\n----------------------- ROUND ROBIN SCHEDULING ALGORITHM--------------------- \n\n");
 
 printf("\n\n Process \t Process ID  \t BurstTime \t Waiting Time \t TurnaroundTime \n ");
 
@@ -118,8 +121,10 @@ for(i=1;i<=n1;i++)
 }
 
 
-printf("\n The average Waiting Time=4.2f",awt);
+printf("\n The average Waiting Time=: %f",awt);
 
-printf("\n The average Turn around Time=4.2f",atat);
+printf("\n The average Turn around Time=: %f",atat);
+printf("\n ----------------------End Of the ProgrAm-----------------------\n");
 }         
+
 
